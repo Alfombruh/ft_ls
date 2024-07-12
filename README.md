@@ -12,11 +12,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/opendir.3.html">opendir</a></td>
-        <td><code>
-            #include &lt;sys/types.h&gt; </br>
-            #include &lt;dirent.h&gt;</br>
-            DIR *opendir(const char *name);
-        <code></td>
+        <td><code>#include &lt;sys/types.h&gt; </br>#include &lt;dirent.h&gt;</br>DIR *opendir(const char *name);<code></td>
         <td>
             The opendir() function opens a directory stream corresponding to
             the directory name, and returns a pointer to the directory
@@ -32,10 +28,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/readdir.3.html">readdir</a></td>
-        <td><code>
-            #include &lt;dirent.h&gt;</br>
-            struct dirent *readdir(DIR *dirp);
-        <code></td>
+        <td><code>#include &lt;dirent.h&gt;</br>struct dirent *readdir(DIR *dirp);<code></td>
         <td>
             The readdir() function returns a pointer to a dirent structure
             representing the next directory entry in the directory stream
@@ -52,10 +45,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/closedir.3.html">closedir</a></td>
-        <td><code>
-            #include &lt;dirent.h&gt;</br>
-            #include &lt;sys/types.h&gt;</br>
-            int closedir(DIR *dirp);
+        <td><code>#include &lt;dirent.h&gt;</br>#include &lt;sys/types.h&gt;</br>int closedir(DIR *dirp);
         <code></td>
         <td>
             The closedir() function closes the directory stream associated
@@ -71,10 +61,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man2/stat.2.html">stat</a></td>
-        <td><code>
-            #include &lt;sys/stat.h&gt;</br>
-            int stat(const char *restrict pathname, struct stat *restrict statbuf);
-        <code></td>
+        <td><code>#include &lt;sys/stat.h&gt;</br>int stat(const char *restrict pathname, struct stat *restrict statbuf);<code></td>
         <td>
             These functions return information about a file, in the buffer
             pointed to by statbuf.  No permissions are required on the file
@@ -91,10 +78,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man2/stat.2.html">lstat</a></td>
-        <td><code>
-            #include &lt;sys/stat.h&gt;</br>
-            int lstat(const char *restrict pathname, struct stat *restrict statbuf);
-        <code></td>
+        <td><code>#include &lt;sys/stat.h&gt;</br>int lstat(const char *restrict pathname, struct stat *restrict statbuf);<code></td>
         <td>
             lstat() is identical to stat(), except that if pathname is a
             symbolic link, then it returns information about the link itself,
@@ -109,10 +93,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/getpwuid.3p.html">getpwuid</a></td>
-        <td><code>
-            #include &lt;pwd.h&gt;</br>
-            struct passwd *getpwuid(uid_t uid);
-        <code></td>
+        <td><code>#include &lt;pwd.h&gt;</br>struct passwd *getpwuid(uid_t uid);<code></td>
         <td>
             The getpwuid() function shall search the user database for an
             entry with a matching uid.
@@ -130,10 +111,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/getgrgid.3p.html">getgrgid</a></td>
-        <td><code>
-            #include &lt;grp.h&gt;</br>
-            struct group *getgrgid(gid_t gid);
-        <code></td>
+        <td><code>#include &lt;grp.h&gt;</br>struct group *getgrgid(gid_t gid);<code></td>
         <td>
             The getgrgid() function shall search the group database for an
             entry with a matching gid.
@@ -151,10 +129,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man2/flistxattr.2.html">listxattr</a></td>
-        <td><code>
-            #include &lt;sys/xattr.h&gt;</br>
-            ssize_t listxattr(const char *path, char *_Nullable list, size_t size);
-        <code></td>
+        <td><code>#include &lt;sys/xattr.h&gt;</br>ssize_t listxattr(const char *path, char *_Nullable list, size_t size);<code></td>
         <td>
              <h5>
                 Extended attributes are name:value pairs associated with inodes
@@ -181,10 +156,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man2/getxattr.2.html">getaxttr</a></td>
-        <td><code>
-            #include &lt;sys/xattr.h&gt;</br>
-               ssize_t getxattr(const char *path, const char *name, void value[.size], size_t size);
-        <code></td>
+        <td><code>#include &lt;sys/xattr.h&gt;</br>ssize_t getxattr(const char *path, const char *name, void value[.size], size_t size);<code></td>
         <td>
             getxattr() retrieves the value of the extended attribute
             identified by name and associated with the given path in the
@@ -201,10 +173,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man2/time.2.html">time</a></td>
-        <td><code>
-            #include &lt;time.h&gt;</br>
-            time_t time(time_t *_Nullable tloc);
-        <code></td>
+        <td><code>#include &lt;time.h&gt;</br>time_t time(time_t *_Nullable tloc);<code></td>
         <td>
             time() returns the time as the number of seconds since the Epoch,
             1970-01-01 00:00:00 +0000 (UTC).
@@ -218,10 +187,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/ctime.3.html">ctime</a></td>
-        <td><code>
-            #include &lt;time.h&gt;</br>
-            char *ctime(const time_t *timep);
-        <code></td>
+        <td><code>#include &lt;time.h&gt;</br>char *ctime(const time_t *timep);<code></td>
         <td>
             The ctime(), gmtime(), and localtime() functions all take an
             argument of data type time_t, which represents calendar time.
@@ -236,10 +202,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man2/readlink.2.html">readlink</a></td>
-        <td><code>
-            #include &lt;unistd.h&gt;</br>
-                ssize_t readlink(const char *restrict pathname, char *restrict buf, size_t bufsiz);
-        <code></td>
+        <td><code>#include &lt;unistd.h&gt;</br>ssize_t readlink(const char *restrict pathname, char *restrict buf, size_t bufsiz);<code></td>
         <td>
             readlink() places the contents of the symbolic link pathname in
             the buffer buf, which has size bufsiz.  readlink() does not
