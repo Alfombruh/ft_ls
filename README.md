@@ -12,7 +12,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/opendir.3.html">opendir</a></td>
-        <td><code>#include &lt;sys/types.h&gt; </br>#include &lt;dirent.h&gt;</br>DIR *opendir(const char *name);<code></td>
+        <td><code>#include &lt;sys/types.h&gt;</br>#include &lt;dirent.h&gt;</br>DIR *opendir(const char *name);<code></td>
         <td>
             The opendir() function opens a directory stream corresponding to
             the directory name, and returns a pointer to the directory
@@ -45,8 +45,7 @@
     </tr>
     <tr>
         <td><a href="https://man7.org/linux/man-pages/man3/closedir.3.html">closedir</a></td>
-        <td><code>#include &lt;dirent.h&gt;</br>#include &lt;sys/types.h&gt;</br>int closedir(DIR *dirp);
-        <code></td>
+        <td><code>#include &lt;dirent.h&gt;</br>#include &lt;sys/types.h&gt;</br>int closedir(DIR *dirp);<code></td>
         <td>
             The closedir() function closes the directory stream associated
             with dirp.  A successful call to closedir() also closes the
