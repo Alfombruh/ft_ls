@@ -11,7 +11,7 @@
         <th>Used</th>
     </tr>
     <tr>
-        <td><a href="https://man7.org/linux/man-pages/man3/opendir.3.html">opendir</a></td>
+        <td><a href="https://man7.org/linux/man-pages/man3/opendir.3.html" target="_blank">opendir</a></td>
         <td><code>#include &lt;sys/types.h&gt;</br>#include &lt;dirent.h&gt;</br>DIR *opendir(const char *name);<code></td>
         <td>
             The opendir() function opens a directory stream corresponding to
