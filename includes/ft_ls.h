@@ -26,8 +26,14 @@ typedef struct s_ls{
 
 int parseArguments(int argc, char **argv, t_ls *ls);
 
-void printDirectory(void *node);
+/*DEBUG*/
 void printFlags(t_ls *ls);
 void printDirectories(t_ls *ls);
+
+int printDirectory(const t_ls *restrict ls);
+
+/*DIRECTORIES*/
+int processArguments(const t_ls *restrict ls);
+int directoryError(const char *restrict name);
 
 #endif

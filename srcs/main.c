@@ -28,7 +28,9 @@ int main(int argc, char **argv)
         return (1);
     printFlags(&ls);
     printDirectories(&ls);
-    
+    // if (printDirectory(&ls))
+    //     return (writeError("Error!\n"));
+    processArguments(&ls);
     freeMemory(&ls);
     return (0);
 }

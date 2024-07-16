@@ -4,6 +4,9 @@ CFLAGS = -Werror -Wextra -Wall
 FILES = srcs/main \
 		srcs/parse/parseArguments \
 		srcs/debug/prints \
+		srcs/debug/test \
+		srcs/directories/processArguments \
+		srcs/directories/errors \
 
 SRCS = $(addsuffix .c,$(FILES))
 OBJS = $(addsuffix .o,$(FILES))
