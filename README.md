@@ -218,3 +218,13 @@
         <td> <input type="checkbox" checked></td>
     </tr>
 </table>
+
+
+# ORDER IN WHICH TO CHECK FLAGS
+
+There is clearly an order in which flags have to be checked in order to write clean code. So here Im writting the order which I think fits best
+1. -t flag: time order
+2. -r flag: reverse the order
+3. -a flag: show hidden files
+4. -l flag: extensive list
+5. -R flag: now recursively

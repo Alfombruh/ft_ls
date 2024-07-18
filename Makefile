@@ -7,6 +7,7 @@ FILES = srcs/main \
 		srcs/debug/test \
 		srcs/directories/processArguments \
 		srcs/directories/errors \
+		srcs/directories/conditions \
 
 SRCS = $(addsuffix .c,$(FILES))
 OBJS = $(addsuffix .o,$(FILES))

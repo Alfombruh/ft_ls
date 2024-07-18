@@ -3,6 +3,7 @@
 
 #include <stdbool.h>
 #include <libft.h>
+#include <dirent.h>
 
 #define ERROR_USAGE "usage: ft_ls [-lRart] [file ...]"
 #define ERROR_DIRECTORY "ft_ls: %s: No such file or directory"
@@ -33,7 +34,11 @@ void printDirectories(t_ls *ls);
 int printDirectory(const t_ls *restrict ls);
 
 /*DIRECTORIES*/
-int processArguments(const t_ls *restrict ls);
+int processArguments(t_ls *ls);
 int directoryError(const char *restrict name);
+
+int showDirectory(const t_ls *restrict ls, const char *restrict name, const int namelen);
+int writeSpace(const int index, const int size, struct dirent *dir_data);
+void newLine(const t_ls *restrict ls, const char *restrict path);
 
 #endif
